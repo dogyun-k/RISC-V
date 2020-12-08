@@ -1,4 +1,4 @@
-#ifndef RV_FORMAT.H
+#ifndef RV_FORMAT
 #define RV_FORMAT.h
 
 typedef union{
@@ -27,7 +27,7 @@ typedef union{
 		uint32_t funct3:3;
 		uint32_t rs1:5;
 		uint32_t rs2:5;
-		uint32_t imm2:5;
+		uint32_t imm2:7;
 	} sb;
 
 	struct{

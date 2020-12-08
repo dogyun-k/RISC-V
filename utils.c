@@ -28,4 +28,8 @@ void display_reg(){
 
 void display_memory(uint32_t start, uint32_t size){
 
+	for(uint32_t i = start; i < start + size; i++){
+
+		printf("M[%4d] = 0x%x\n", i, memory[i]);
+	}
 }
